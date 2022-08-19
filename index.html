@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            width: 200vh; /*控制缩放*/
+            background-color: #eee
+        }
+       /* *{
+            border: 1px solid black;
+        } */
+        .white{
+            background-color: white;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .flex{
+            display: flex;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        div{
+            box-shadow:rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+              rgb(0 0 0 / 14%) 0px 1px 1px 0px,rgb(0 0 0 / 12%) 0px 1px 
+        } 
+    </style>
+</head>
+<body class="flex">
+    <!--侧边栏--><div style="width: 200px;" class="white">
+         
+    </div>
+    <!--主区域--><div style="flex:1; background-color: #eee" class="column flex">
+        <!--顶部栏--><div style="height: 60px;;" class="white">
+        </div>
+        <!--内容区--><div style="flex: 1; background-color: #eee" class="white flex">
+           <!--左--><div style="flex: 3;" class="flex column mg8" >
+            <!--上--><div style="flex:1;" class="flex">
+                <!--小块--><div style="flex: 1; " class="flex white mgr8"></div>
+                <div style="flex: 1; " class="flex white mgr8"></div>
+                <div style="flex: 1; " class="flex white mgr8"></div>
+            </div>
+            <!--下--><div style="flex:3;" class="flex column">
+            <!--小片--><div style="flex:1;" class="flex white mgt8"></div>
+            <div style="flex:1;" class="flex white mgt8"></div>
+            <div style="flex:1;" class="flex white mgt8"></div>
+            </div>   
+         </div>
+           <!--右--><div style="flex: 1;" class="flex column mgt8 mgr8" >
+            <!--一堆东西--><div style="flex:1" class="flex white"></div>
+            <div style="flex:2" class="flex white mgt8"></div>
+         </div>
+        </div>
+    
+    </div>
+</body>
+</html>
